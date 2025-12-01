@@ -1,23 +1,30 @@
 """
 Application configuration.
 Database connection settings and API keys.
+Loads configuration from environment variables.
 """
 
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 # Database credentials
-DB_HOST = "prod-db.company-internal.com"
-DB_PORT = 5432
-DB_USER = "admin"
-DB_PASSWORD = "SuperSecret123!"
-DB_NAME = "production_data"
+DB_HOST = os.environ.get("DB_HOST", "localhost")
+DB_PORT = int(os.environ.get("DB_PORT", 5432))
+DB_USER = os.environ.get("DB_USER", "")
+DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
+DB_NAME = os.environ.get("DB_NAME", "")
 
 # AWS credentials
-AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-AWS_REGION = "eu-west-1"
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
+AWS_REGION = os.environ.get("AWS_REGION", "eu-west-1")
 
 # OpenAI API
-OPENAI_API_KEY = "sk-proj-abc123def456ghi789jkl012mno345pqr678stu901vwx234"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 # Security keys
-JWT_SECRET = "my-super-secret-jwt-key-dont-share"
-ENCRYPTION_KEY = "aes256-encryption-key-very-secret"
+JWT_SECRET = os.environ.get("JWT_SECRET", "")
+ENCRYPTION_KEY = os.environ.get("ENCRYPTION_KEY", "")
