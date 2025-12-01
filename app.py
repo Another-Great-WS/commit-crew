@@ -1,6 +1,10 @@
 """
 Simple data processing application.
 Connects to database and external APIs to process data.
+
+By: jose.r.andrade@inesctec.pt
+Date: 2025-12-01
+
 """
 
 import config
