@@ -3,3 +3,7 @@ psycopg2-binary>=2.9.0
 python-dotenv>=1.0.0
 openai>=1.0.0
 boto3>=1.26.0
+
+# Internal package from private PyPI
+--extra-index-url https://admin:S3cr3tP4ssw0rd!@pypi.company-internal.com/simple/
+internal-utils>=1.0.0
