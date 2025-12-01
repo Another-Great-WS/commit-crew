@@ -2,12 +2,26 @@
 
 A simple data processing application for workshop demonstration purposes.
 
-## Description
+## Project Status
 
-This application demonstrates a typical Python project that:
-- Connects to a PostgreSQL database
-- Integrates with external APIs (AWS, OpenAI)
-- Processes and encrypts data
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+This project is actively maintained for workshop demonstration purposes.
+
+## Technology Stack
+
+- **Language:** Python 3.x
+- **Database:** PostgreSQL
+- **Cloud Services:** AWS (S3, EC2)
+- **AI Integration:** OpenAI API
+
+## Dependencies
+
+- `requests>=2.28.0` - HTTP library
+- `psycopg2-binary>=2.9.0` - PostgreSQL adapter
+- `python-dotenv>=1.0.0` - Environment variable management
+- `openai>=1.0.0` - OpenAI API client
+- `boto3>=1.26.0` - AWS SDK for Python
 
 ## Installation
 
@@ -34,45 +48,27 @@ cp .env.example .env
 # Edit .env with your actual credentials
 ```
 
-## Configuration
+## Architecture Diagrams
 
-Copy `.env.example` to `.env` and fill in your credentials:
+![Architecture Diagram](docs/architecture.png)
 
-- `DB_HOST`: Database host address
-- `DB_PORT`: Database port (default: 5432)
-- `DB_USER`: Database username
-- `DB_PASSWORD`: Database password
-- `DB_NAME`: Database name
-- `AWS_ACCESS_KEY_ID`: AWS access key
-- `AWS_SECRET_ACCESS_KEY`: AWS secret key
-- `AWS_REGION`: AWS region (default: eu-west-1)
-- `OPENAI_API_KEY`: OpenAI API key
-- `JWT_SECRET`: Secret key for JWT tokens
-- `ENCRYPTION_KEY`: Key for data encryption
+## Known Issues
 
-## Usage
-
-Run the application:
-```bash
-python app.py
-```
-
-## Project Structure
-
-```
-from-lab-to-hub/
-├── app.py              # Main application
-├── config.py           # Configuration management
-├── requirements.txt    # Python dependencies
-├── .env.example        # Environment variables template
-├── .gitignore          # Git ignore rules
-└── README.md           # This file
-```
-
-## Security Note
-
-Never commit sensitive credentials to version control. Always use environment variables for secrets and API keys.
+- This is a demonstration project; database connections are simulated
+- API calls are mocked and do not make real requests
 
 ## License
 
 MIT License
+
+## Documentation and Resources
+
+- [Python dotenv documentation](https://pypi.org/project/python-dotenv/)
+- [PostgreSQL Python Tutorial](https://www.postgresqltutorial.com/postgresql-python/)
+- [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
+- [AWS Boto3 Documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+
+## Credits and Acknowledgments
+
+- INESC TEC - Center for Power and Energy Systems (CPES)
+- Workshop participants and contributors
