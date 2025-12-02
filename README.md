@@ -17,7 +17,7 @@ This project is actively maintained for workshop demonstration purposes.
 
 ## Dependencies
 
-- Python 3.x (standard library only)
+No external dependencies required - uses only Python standard library.
 
 ## Installation
 
@@ -27,7 +27,16 @@ git clone <repository-url>
 cd from-lab-to-hub
 ```
 
-2. Run the application:
+2. Configure environment variables (optional):
+```bash
+cp .env.example .env
+
+# On Windows (PowerShell), use "copy .env.example .env"
+
+# Edit .env with your actual credentials
+```
+
+3. Run the application:
 ```bash
 python app.py
 ```
@@ -47,8 +56,8 @@ MIT License
 
 ## Documentation and Resources
 
-- [Python Documentation](https://docs.python.org/3/)
-- [Git Documentation](https://git-scm.com/doc)
+- [Python os.environ documentation](https://docs.python.org/3/library/os.html#os.environ)
+- [12-Factor App - Config](https://12factor.net/config)
 
 ## Credits and Acknowledgments
 
