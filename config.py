@@ -1,14 +1,9 @@
 """
 Application configuration.
 Database connection settings and API keys.
-Loads configuration from environment variables.
 """
 
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
 
 # Database credentials
 DB_HOST = os.environ.get("DB_HOST", "localhost")

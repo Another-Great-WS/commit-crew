@@ -17,11 +17,7 @@ This project is actively maintained for workshop demonstration purposes.
 
 ## Dependencies
 
-- `requests>=2.28.0` - HTTP library
-- `psycopg2-binary>=2.9.0` - PostgreSQL adapter
-- `python-dotenv>=1.0.0` - Environment variable management
-- `openai>=1.0.0` - OpenAI API client
-- `boto3>=1.26.0` - AWS SDK for Python
+- Python 3.x (standard library only)
 
 ## Installation
 
@@ -31,21 +27,9 @@ git clone <repository-url>
 cd from-lab-to-hub
 ```
 
-2. Create a virtual environment:
+2. Run the application:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Configure environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your actual credentials
+python app.py
 ```
 
 ## Architecture Diagrams
@@ -63,10 +47,8 @@ MIT License
 
 ## Documentation and Resources
 
-- [Python dotenv documentation](https://pypi.org/project/python-dotenv/)
-- [PostgreSQL Python Tutorial](https://www.postgresqltutorial.com/postgresql-python/)
-- [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
-- [AWS Boto3 Documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+- [Python Documentation](https://docs.python.org/3/)
+- [Git Documentation](https://git-scm.com/doc)
 
 ## Credits and Acknowledgments
 

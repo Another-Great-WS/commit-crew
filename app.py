@@ -1,49 +1,55 @@
 """
 Simple data processing application.
-Connects to database and external APIs to process data.
+Demonstrates configuration management with environment variables.
 
 By: jose.r.andrade@inesctec.pt
-Date: 2025-12-01
-
+Date: 2025-12-02
 """
 
 import config
 
 
 def connect_to_database():
-    """Connect to the production database."""
+    """
+    Connection to the production database.
+    
+    """
+    
+    # Simulates an actual database connection using config values
     print(f"Connecting to database at {config.DB_HOST}:{config.DB_PORT}")
     print(f"Database: {config.DB_NAME}")
     print(f"User: {config.DB_USER}")
-    # In a real app, we would use psycopg2 here
-    # connection = psycopg2.connect(
-    #     host=config.DB_HOST,
-    #     port=config.DB_PORT,
-    #     user=config.DB_USER,
-    #     password=config.DB_PASSWORD,
-    #     database=config.DB_NAME
-    # )
     return {"status": "connected", "host": config.DB_HOST}
 
 
 def fetch_data_from_api():
-    """Fetch data from external API using OpenAI."""
-    print(f"Using OpenAI API key: {config.OPENAI_API_KEY[:10]}...")
-    print(f"AWS Region: {config.AWS_REGION}")
-    # In a real app, we would call the OpenAI API
-    # client = openai.OpenAI(api_key=config.OPENAI_API_KEY)
+    """
+    Fetch data from external API.
+    """
+    # Simulates an API call using the API key from config
+    api_key = config.OPENAI_API_KEY
+    if api_key:
+        print(f"Using API key: {api_key[:10]}...")
+    else:
+        print("No API key configured")
+    # Simulate AWS region usage
+    print(f"AWS Region: {config.AWS_REGION}") # Simulates AWS region usage
     return {"data": "sample_data", "source": "api"}
 
 
 def process_data(data):
-    """Process the fetched data."""
+    """
+    Process the fetched data.
+    
+    """
     print(f"Processing data: {data}")
-    print(f"Using encryption key for secure processing...")
-    # Simulate data processing
+    
+    # Add extra processing layer
+    quick_math = 10 / 0. # is this even possible?
+    
     processed = {
         "original": data,
-        "processed": True,
-        "encrypted": True
+        "processed": True
     }
     return processed
 
