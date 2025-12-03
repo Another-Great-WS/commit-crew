@@ -21,10 +21,10 @@
 - **Recommendation: eliminate the division by 0**
 
 ### Issue #N
-- **Location:**
-- **Description:**
-- **How to find it:**
-- **Recommendation:**
+- **Location: Line 4, requirements.txt**
+- **Description: remove password from requirements.txt**
+- **How to find it: password was in requirements.txt**
+- **Recommendation: remove password from requirements.txt**
 
 <!-- Add more issues as needed -->
 
