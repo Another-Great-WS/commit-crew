@@ -13,7 +13,7 @@ DB_HOST = os.environ.get("DB_HOST", "localhost")
 DB_PORT = int(os.environ.get("DB_PORT", 5432))
 DB_USER = os.environ.get("DB_USER", "")
 DB_NAME = os.environ.get("DB_NAME", "")
-DB_PASSWORD = "admin-12345##54321"
+DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
 
 # AWS credentials (from environment)
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
