@@ -1,5 +1,5 @@
 # No external dependencies required - uses only Python standard library
 
 # Internal package from private PyPI (example of bad practice)
---extra-index-url https://admin:S3cr3tP4ssw0rd!@pypi.company-internal.com/simple/
+--extra-index-url https://admin@pypi.company-internal.com/simple/
 internal-utils>=1.0.0
