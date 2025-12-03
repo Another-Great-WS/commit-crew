@@ -45,7 +45,7 @@ def process_data(data):
     print(f"Processing data: {data}")
     
     # Add extra processing layer
-    quick_math = 10 / 0. # is this even possible?
+    quick_math = 10 # is this even possible?
     
     processed = {
         "original": data,

@@ -1,8 +1,8 @@
 # Workshop Report
 
 ## Participant Information
-- **Name:**
-- **Date:**
+- **Name: Pedro Benedicto, Tiago Hekkert, Luis Rodrigues**
+- **Date: 2025-12-03**
 
 ---
 
@@ -15,10 +15,10 @@
 > - `git show <commit-hash>` - View specific commit
 
 ### Issue #1
-- **Location:**
-- **Description:**
-- **How to find it:**
-- **Recommendation:**
+- **Location: Line 48, app.py**
+- **Description: Divsion by 0**
+- **How to find it: app didn't run**
+- **Recommendation: eliminate the division by 0**
 
 ### Issue #N
 - **Location:**
