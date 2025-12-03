@@ -20,11 +20,17 @@
 - **How to find it: app didn't run**
 - **Recommendation: eliminate the division by 0**
 
-### Issue #N
+### Issue #2
 - **Location: Line 4, requirements.txt**
 - **Description: remove password from requirements.txt**
 - **How to find it: password was in requirements.txt**
 - **Recommendation: remove password from requirements.txt**
+
+### Issue #3
+- **Location: Line 16, config.py**
+- **Description: fix password in config.py**
+- **How to find it: wrong password in config.py**
+- **Recommendation: fix password in config.py**
 
 <!-- Add more issues as needed -->
 
